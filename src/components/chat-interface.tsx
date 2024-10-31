@@ -16,7 +16,7 @@ export default function ChatInterface() {
       role: 'ai',
       content: `Hey {{FirstName}},
 
-It's {RepName}, I am with Shiney Insurance. Hope you're well.
+It's {RepName} here, I am with Shiney Insurance. Hope you're well.
 
 Had my calendar ping me, but didn't want to disturb you without texting first.
 {{Special/Offer/Update}}
