@@ -16,7 +16,7 @@ export default function ChatInterface() {
       role: 'ai',
       content: `Hey {{FirstName}},
 
-It's {RepName}, I am with Shiney Solar. Hope you're well.
+It's {RepName}, I am with Shiney Insurance. Hope you're well.
 
 Had my calendar ping me, but didn't want to disturb you without texting first.
 {{Special/Offer/Update}}
@@ -43,7 +43,7 @@ Would you like to take a look at the details?`
     // Call the /start endpoint to get the thread ID
     const initializeChat = async () => {
       try {
-        const response = await fetch('https://demoprivate.shiney.ai/start', {
+        const response = await fetch('https://insurancedemo.shiney.ai/start', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ Would you like to take a look at the details?`
       setIsLoading(true);
 
       try {
-        const response = await fetch('https://demoprivate.shiney.ai/chat', {
+        const response = await fetch('https://insurancedemo.shiney.ai/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
